@@ -7,6 +7,13 @@ FLAC = [".flac"]
 
 FORMATS_SUPPORTED = tuple(AIFF + AIFFC + WAV + FLAC)
 
+Language = {
+	"EN" : "en-EN",
+    "RU" : "ru-RU",
+    # "FR" : "fr-FR",
+    "CN" : "zh-CN"
+}
+
 recognizer = sr.Recognizer()
 
 print('[INFO] This program exactracts scripts from audio files.')
@@ -21,9 +28,10 @@ else:
         with sr.AudioFile(input_filename) as data_input:
             print ('[UPDATE] Recognizing audio file...')
             data_output = recognizer.record(data_input)
-    
+
         print ('[UPDATE] Extracting script...')
-        script = recognizer.recognize_google(data_output)
+        print ("[INFO] Languages: EN = English | RU = Русский | CN = 中文")
+        script = recognizer.recognize_google(data_output, language = Language[input("[INPUT] Choose language: ")])
 
         print ('[UPDATE] Creating output file...')
         # example output filename "audio_output.txt"

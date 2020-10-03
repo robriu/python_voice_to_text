@@ -15,6 +15,16 @@ This is a list of audio file formats supported by this program: <br />
 - FLAC (Native FLAC format only, OGG-FLAC is not supported.) <br />
 
 ---
+## Supported Languages
+This is a list of languages supported by this program: <br />
+- English <br />
+- Russian <br />
+- Chinese <br />
+
+Note: All supported languages were tested. <br />
+Additional language support can be requested. <br />
+
+---
 ## Usage
 0. Clone repo or download project zip. <br />
 1. Open a chosen terminal. (cmd, gitbash) <br />
