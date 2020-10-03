@@ -8,9 +8,8 @@ FLAC = [".flac"]
 FORMATS_SUPPORTED = tuple(AIFF + AIFFC + WAV + FLAC)
 
 Language = {
-	"EN" : "en-EN",
+    "EN" : "en-EN",
     "RU" : "ru-RU",
-    # "FR" : "fr-FR",
     "CN" : "zh-CN"
 }
 
